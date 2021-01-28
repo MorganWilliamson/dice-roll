@@ -97,6 +97,8 @@ export default class Roller extends React.Component {
     render() {
         return (
             <div className="wrapper-container">
+                <p>Select the number and type of dice you would like to roll. (Rolls 1 die by default.)</p>
+
                 <div className="multiplier-container">
                     {this.renderMultiplier()}
                 </div>

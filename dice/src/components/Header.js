@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
     return (
         <div className="header">
-            <p>D&D Dice Roller</p>
+            <h1>5th Edition Dice Roller</h1>
         </div>
     )
 }
