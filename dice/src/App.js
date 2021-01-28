@@ -1,10 +1,10 @@
-import './App.css';
+import './stylesheets/App.css';
 import Roller from "./components/DiceRolling";
 
 function App() {
   return (
     <div className="App">
-      <p>App Rendering!</p>
+      <p>D&D Dice Roller</p>
       <Roller />
     </div>
   );

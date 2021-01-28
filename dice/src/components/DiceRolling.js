@@ -1,8 +1,9 @@
 import React from "react";
+import "../stylesheets/dice.css"
 
 const Die = (props) => {
     return(
-        <button className="die" value={props.value} onClick={props.update} key={Die}>
+        <button className="die" value={props.value} onClick={props.update}>
             d{props.value}
         </button>
     )
@@ -10,13 +11,22 @@ const Die = (props) => {
 
 const Multiplier = (props) => {
     return(
-        <input className="multiplier" type="number" pattern="[0-9]*" min="1" max="10" placeholder="1" onChange={props.update} />
+        <div className="multiplier-input">
+            <label>Number of Dice: </label>
+            <input className="multiplier-input" 
+                type="number" 
+                pattern="[0-9]*" 
+                min="1" max="10" 
+                placeholder="1" 
+                onChange={props.update} 
+            />
+        </div>
     )
 };
 
 const Result = (props) => {
     return(
-        <p className="result">{props.result}</p>
+        <p className="result">Total: {props.result}</p>
     )
 };
 
@@ -27,7 +37,7 @@ export default class Roller extends React.Component {
         this.state = {
             multiplier: 1,
             result: 0, 
-            dice: [2, 4, 6, 8, 10, 12, 20]
+            dice: [4, 6, 8, 10, 12, 20]
         };
         this.dieMultiplier = this.dieMultiplier.bind(this);
         this.rollTotal = this.rollTotal.bind(this);
@@ -86,7 +96,7 @@ export default class Roller extends React.Component {
 
     render() {
         return (
-            <div className="wrapper">
+            <div className="wrapper-container">
                 <div className="multiplier-container">
                     {this.renderMultiplier()}
                 </div>
