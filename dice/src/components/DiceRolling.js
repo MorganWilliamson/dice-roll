@@ -16,7 +16,7 @@ const Multiplier = (props) => {
             <input className="multiplier-input" 
                 type="number" 
                 pattern="[0-9]*" 
-                min="1" max="10" 
+                min="1" max="1000" 
                 placeholder="1" 
                 onChange={props.update} 
             />
