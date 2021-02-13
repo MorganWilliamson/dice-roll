@@ -1,5 +1,11 @@
 .die {
-    /* border: none; */
-    padding: 2%;
-    margin: 2%;
+  color: #ffe77aff;
+  background-color: #2c5f2dff;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+.die:hover {
+  background-color: #6ea029;
 }

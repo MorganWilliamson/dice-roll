@@ -1,3 +1,9 @@
+body {
+  background-color: #222629;
+  color: #f8f8ff;
+}
+
 .App {
-    margin: 5% 35%;
+  border: 1px solid red;
+  margin: 5% 20%;
 }
