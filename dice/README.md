@@ -6,7 +6,7 @@ To-Do:
 - [] Add option for advantage and disadvantage
 - [] Complete styles for all components
 - [] Optimize DiceRolling.js functionality
-- [] Update this README :D
+- [] Refactor with TS
 
 Maybe:
 
